@@ -1,75 +1,20 @@
-body {
-  font-family: sans-serif;
-  background-color: #ff3333;
-  color: #e6001a;
-  font-size: 16px;
-}
-@media only screen and (min-width: 40em) {
-  body {
-    font-size: 3rem;
-  }
-}
+/* Error: Undefined mixin.
+ *   ,
+ * 5 | /   @include mq(medium) {
+ * 6 | |     --section-spacing: 7rem;
+ * 7 | \   }
+ *   '
+ *   sass\base\_root.scss 5:3   @use
+ *   sass\base\_index.scss 2:1  @use
+ *   sass\style.scss 1:1        root stylesheet */
 
-.card {
-  position: relative;
+body::before {
+  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
+      "Droid Sans Mono", monospace, monospace;
+  white-space: pre;
+  display: block;
+  padding: 1em;
+  margin-bottom: 1em;
+  border-bottom: 2px solid black;
+  content: "Error: Undefined mixin.\a   \2577 \a 5 \2502  \250c    @include mq(medium) {\a 6 \2502  \2502      --section-spacing: 7rem;\a 7 \2502  \2514    }\a   \2575 \a   sass\\base\\_root.scss 5:3   @use\a   sass\\base\\_index.scss 2:1  @use\a   sass\\style.scss 1:1        root stylesheet";
 }
-.card::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-}
-
-a, .btn {
-  text-decoration: none;
-}
-
-.btn {
-  padding: 5em 1.25em;
-  background: red;
-  color: white;
-}
-
-.btn-secondary, .btn-primary {
-  padding: 2em;
-  color: white;
-}
-
-.btn-primary {
-  background: red;
-}
-
-.btn-secondary {
-  background: blue;
-}
-
-.btn-with-shadow {
-  transition: transform 350ms ease-in-out;
-  box-shadow: 0 0.25em 0.5em 0 rgba(0, 0, 0, 0.2);
-  position: relative;
-}
-.btn-with-shadow::after {
-  content: "";
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  box-shadow: 0 0 1.25em 0 rgba(0, 0, 0, 0.4);
-  transition: transform 350ms ease-in-out;
-  opacity: 0;
-}
-.btn-with-shadow:hover, .btn-with-shadow:focus {
-  transform: scale(1.05);
-}
-.btn-with-shadow:hover::after, .btn-with-shadow:focus::after {
-  opacity: 1;
-}
-
-.active {
-  font-size: 2em;
-}
-
-/*# sourceMappingURL=style.css.map */
