@@ -1,5 +1,5 @@
-@use "font-face";
-@use "root";
-@use "reset";
-@use "typography";
-@use "base";
+@forward "font-face";
+@forward "root";
+@forward "reset";
+@forward "typography";
+@forward "base";

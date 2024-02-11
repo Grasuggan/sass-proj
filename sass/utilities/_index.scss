@@ -1,4 +1,4 @@
-@use "color-utilities";
-@use "container";
-@use "flow";
-@use "sr-only";
+@forward "color-utilities";
+@forward "container";
+@forward "flow";
+@forward "sr-only";
