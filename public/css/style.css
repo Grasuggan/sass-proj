@@ -1,6 +1,6 @@
 @font-face {
   font-family: "Alaska";
-  src: url("../fonts/alaska.ttf") format("truetype");
+  src: url("../../assets/fonts/alaska.ttf") format("truetype");
   font-display: swap;
 }
 :root {
@@ -10,26 +10,26 @@
   --clr-primary-300: hsl(14, 100%, 60%);
   --clr-primary-400: hsl(12, 100%, 43%);
   --clr-primary-500: hsl(14, 100%, 20%);
-  --clr-article-100: hsl(219, 89%, 80%);
-  --clr-article-200: hsl(219, 89%, 70%);
-  --clr-article-300: hsl(219, 89%, 60%);
-  --clr-article-400: hsl(212, 61%, 37%);
-  --clr-article-500: hsl(219, 89%, 20%);
-  --clr-youtube-100: hsl(345, 88%, 80%);
-  --clr-youtube-200: hsl(345, 88%, 70%);
-  --clr-youtube-300: hsl(345, 88%, 60%);
-  --clr-youtube-400: hsl(345, 88%, 46%);
-  --clr-youtube-500: hsl(345, 88%, 20%);
+  --clr-beetroot-100: hsl(219, 89%, 80%);
+  --clr-beetroot-200: hsl(219, 89%, 70%);
+  --clr-beetroot-300: hsl(219, 89%, 60%);
+  --clr-beetroot-400: hsl(212, 61%, 37%);
+  --clr-beetroot-500: hsl(219, 89%, 20%);
+  --clr-cauliflower-100: hsl(345, 88%, 80%);
+  --clr-cauliflower-200: hsl(345, 88%, 70%);
+  --clr-cauliflower-300: hsl(345, 88%, 60%);
+  --clr-cauliflower-400: hsl(345, 88%, 46%);
+  --clr-cauliflower-500: hsl(345, 88%, 20%);
   --clr-resource-100: hsl(311, 46%, 80%);
   --clr-resource-200: hsl(311, 46%, 70%);
   --clr-resource-300: hsl(311, 46%, 50%);
   --clr-resource-400: hsl(311, 46%, 33%);
   --clr-resource-500: hsl(311, 46%, 15%);
-  --clr-course-100: hsl(176, 66%, 70%);
-  --clr-course-200: hsl(176, 66%, 60%);
-  --clr-course-300: hsl(176, 66%, 40%);
-  --clr-course-400: hsl(176, 66%, 30%);
-  --clr-course-500: hsl(176, 66%, 20%);
+  --clr-burritos-100: hsl(176, 66%, 70%);
+  --clr-burritos-200: hsl(176, 66%, 60%);
+  --clr-burritos-300: hsl(176, 66%, 40%);
+  --clr-burritos-400: hsl(176, 66%, 30%);
+  --clr-burritos-500: hsl(176, 66%, 20%);
   --clr-neutral-100: hsl(0, 0%, 100%);
   --clr-neutral-200: hsl(0, 0%, 87%);
   --clr-neutral-300: hsl(0, 0%, 80%);
@@ -143,7 +143,10 @@ body {
   letter-spacing: -0.5px;
 }
 
-h1, h2, h3, h4 {
+h1,
+h2,
+h3,
+h4 {
   --font-weight: 700;
   --font-width: 80;
   font-weight: normal;
@@ -210,6 +213,11 @@ a:hover, a:focus {
   text-decoration: none;
 }
 
+ul {
+  list-style: circle;
+  padding-left: 1em;
+}
+
 p:not([class]),
 ul:not([class]),
 li:not([class]) {
@@ -262,84 +270,84 @@ body {
   background-color: var(--clr-primary-500) !important;
 }
 
-.text-article-100 {
-  color: var(--clr-article-100) !important;
+.text-beetroot-100 {
+  color: var(--clr-beetroot-100) !important;
 }
 
-.bg-article-100 {
-  background-color: var(--clr-article-100) !important;
+.bg-beetroot-100 {
+  background-color: var(--clr-beetroot-100) !important;
 }
 
-.text-article-200 {
-  color: var(--clr-article-200) !important;
+.text-beetroot-200 {
+  color: var(--clr-beetroot-200) !important;
 }
 
-.bg-article-200 {
-  background-color: var(--clr-article-200) !important;
+.bg-beetroot-200 {
+  background-color: var(--clr-beetroot-200) !important;
 }
 
-.text-article-300 {
-  color: var(--clr-article-300) !important;
+.text-beetroot-300 {
+  color: var(--clr-beetroot-300) !important;
 }
 
-.bg-article-300 {
-  background-color: var(--clr-article-300) !important;
+.bg-beetroot-300 {
+  background-color: var(--clr-beetroot-300) !important;
 }
 
-.text-article-400 {
-  color: var(--clr-article-400) !important;
+.text-beetroot-400 {
+  color: var(--clr-beetroot-400) !important;
 }
 
-.bg-article-400 {
-  background-color: var(--clr-article-400) !important;
+.bg-beetroot-400 {
+  background-color: var(--clr-beetroot-400) !important;
 }
 
-.text-article-500 {
-  color: var(--clr-article-500) !important;
+.text-beetroot-500 {
+  color: var(--clr-beetroot-500) !important;
 }
 
-.bg-article-500 {
-  background-color: var(--clr-article-500) !important;
+.bg-beetroot-500 {
+  background-color: var(--clr-beetroot-500) !important;
 }
 
-.text-youtube-100 {
-  color: var(--clr-youtube-100) !important;
+.text-cauliflower-100 {
+  color: var(--clr-cauliflower-100) !important;
 }
 
-.bg-youtube-100 {
-  background-color: var(--clr-youtube-100) !important;
+.bg-cauliflower-100 {
+  background-color: var(--clr-cauliflower-100) !important;
 }
 
-.text-youtube-200 {
-  color: var(--clr-youtube-200) !important;
+.text-cauliflower-200 {
+  color: var(--clr-cauliflower-200) !important;
 }
 
-.bg-youtube-200 {
-  background-color: var(--clr-youtube-200) !important;
+.bg-cauliflower-200 {
+  background-color: var(--clr-cauliflower-200) !important;
 }
 
-.text-youtube-300 {
-  color: var(--clr-youtube-300) !important;
+.text-cauliflower-300 {
+  color: var(--clr-cauliflower-300) !important;
 }
 
-.bg-youtube-300 {
-  background-color: var(--clr-youtube-300) !important;
+.bg-cauliflower-300 {
+  background-color: var(--clr-cauliflower-300) !important;
 }
 
-.text-youtube-400 {
-  color: var(--clr-youtube-400) !important;
+.text-cauliflower-400 {
+  color: var(--clr-cauliflower-400) !important;
 }
 
-.bg-youtube-400 {
-  background-color: var(--clr-youtube-400) !important;
+.bg-cauliflower-400 {
+  background-color: var(--clr-cauliflower-400) !important;
 }
 
-.text-youtube-500 {
-  color: var(--clr-youtube-500) !important;
+.text-cauliflower-500 {
+  color: var(--clr-cauliflower-500) !important;
 }
 
-.bg-youtube-500 {
-  background-color: var(--clr-youtube-500) !important;
+.bg-cauliflower-500 {
+  background-color: var(--clr-cauliflower-500) !important;
 }
 
 .text-resource-100 {
@@ -382,44 +390,44 @@ body {
   background-color: var(--clr-resource-500) !important;
 }
 
-.text-course-100 {
-  color: var(--clr-course-100) !important;
+.text-burritos-100 {
+  color: var(--clr-burritos-100) !important;
 }
 
-.bg-course-100 {
-  background-color: var(--clr-course-100) !important;
+.bg-burritos-100 {
+  background-color: var(--clr-burritos-100) !important;
 }
 
-.text-course-200 {
-  color: var(--clr-course-200) !important;
+.text-burritos-200 {
+  color: var(--clr-burritos-200) !important;
 }
 
-.bg-course-200 {
-  background-color: var(--clr-course-200) !important;
+.bg-burritos-200 {
+  background-color: var(--clr-burritos-200) !important;
 }
 
-.text-course-300 {
-  color: var(--clr-course-300) !important;
+.text-burritos-300 {
+  color: var(--clr-burritos-300) !important;
 }
 
-.bg-course-300 {
-  background-color: var(--clr-course-300) !important;
+.bg-burritos-300 {
+  background-color: var(--clr-burritos-300) !important;
 }
 
-.text-course-400 {
-  color: var(--clr-course-400) !important;
+.text-burritos-400 {
+  color: var(--clr-burritos-400) !important;
 }
 
-.bg-course-400 {
-  background-color: var(--clr-course-400) !important;
+.bg-burritos-400 {
+  background-color: var(--clr-burritos-400) !important;
 }
 
-.text-course-500 {
-  color: var(--clr-course-500) !important;
+.text-burritos-500 {
+  color: var(--clr-burritos-500) !important;
 }
 
-.bg-course-500 {
-  background-color: var(--clr-course-500) !important;
+.bg-burritos-500 {
+  background-color: var(--clr-burritos-500) !important;
 }
 
 .text-neutral-100 {
@@ -474,16 +482,16 @@ body {
   --clr: var(--clr-primary-400);
 }
 
-.youtube {
-  --clr: var(--clr-youtube-400);
+.cauliflower {
+  --clr: var(--clr-cauliflower-400);
 }
 
-.article {
-  --clr: var(--clr-article-400);
+.beetroot {
+  --clr: var(--clr-beetroot-400);
 }
 
-.course {
-  --clr: var(--clr-course-400);
+.burritos {
+  --clr: var(--clr-burritos-400);
 }
 
 .resource {
@@ -554,13 +562,13 @@ body {
   --clr: var(--clr-primary-400);
 }
 .primary-nav li:nth-child(2) {
-  --clr: var(--clr-article-400);
+  --clr: var(--clr-beetroot-400);
 }
 .primary-nav li:nth-child(3) {
-  --clr: var(--clr-youtube-400);
+  --clr: var(--clr-cauliflower-400);
 }
 .primary-nav li:nth-child(4) {
-  --clr: var(--clr-course-400);
+  --clr: var(--clr-burritos-400);
 }
 .primary-nav li:nth-child(5) {
   --clr: var(--clr-resource-400);
@@ -824,7 +832,7 @@ iframe {
   left: -0.5em;
   right: -0.5em;
   background-color: var(--clr-primary-400);
-  background-image: linear-gradient(145deg, var(--clr-youtube-400), var(--clr-primary-300));
+  background-image: linear-gradient(145deg, var(--clr-cauliflower-400), var(--clr-primary-300));
   grid-row: 1/2;
   z-index: -1;
   border-radius: 1em;
@@ -851,26 +859,80 @@ iframe {
   margin-bottom: 2em;
 }
 
-.home-section.youtube {
-  background-image: url("../img/youtube.svg"), linear-gradient(120deg, var(--clr-neutral-100), var(--clr-youtube-100));
-  background-repeat: no-repeat;
-  background-position: center, top left;
-  background-size: 55rem, 400%;
+.home-section.cauliflower {
+  background-image: linear-gradient(120deg, var(--clr-neutral-100), var(--clr-cauliflower-100));
 }
 
-.home-section.course {
+.home-section.burritos {
   color: var(--clr-neutral-100);
-  background-color: var(--clr-course-400);
-  background-image: linear-gradient(120deg, var(--clr-article-400), var(--clr-course-400));
+  background-color: var(--clr-burritos-400);
+  background-image: linear-gradient(120deg, var(--clr-beetroot-400), var(--clr-burritos-400));
 }
-.home-section.course a:not([class]) {
+.home-section.burritos a:not([class]) {
   color: white;
+}
+
+.split {
+  min-height: min-content;
+  display: flex;
+  flex-flow: row wrap;
+  margin: 0 auto;
+}
+.split .split__text {
+  order: 2;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  padding-right: 60px;
+}
+.split .split__text .split__text-inner {
+  padding-top: 0;
+  padding-bottom: 0;
+  max-width: 650px;
+  flex-grow: 1;
+}
+.split .split__image {
+  width: 100%;
+  min-height: 400px;
+  display: flex;
+  flex-flow: row wrap;
+  border: 5px solid var(--clr-neutral-100);
+  order: 1;
+}
+.split .split__image .split__image-item {
+  flex-grow: 1;
+  width: 100%;
+  min-height: 100%;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  border: 5px solid var(--clr-neutral-100);
+}
+.split.split--text-right .split__text {
+  transform: translateX(0);
+  padding-right: 60px;
+  padding-left: 0;
+}
+@media only screen and (min-width: 65em) {
+  .split .split__text {
+    width: 50%;
+    order: 1;
+  }
+  .split.split--text-right .split__text {
+    transform: translateX(75px);
+    padding-left: 60px;
+    padding-right: 0;
+    order: 2;
+  }
+  .split .split__image {
+    border: 5px solid var(--clr-neutral-100);
+    width: 50%;
+  }
 }
 
 .primary-footer {
   font-size: var(--fs-300);
   color: var(--clr-neutral-800);
-  margin-top: 10rem;
   padding: 3rem;
   background-color: var(--clr-neutral-200);
   text-align: center;
