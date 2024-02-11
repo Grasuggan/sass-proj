@@ -1,0 +1,67 @@
+@use "variables" as *;
+
+@mixin mq($point) {
+  $size: map-get($breakpoints, $point);
+
+  @media only screen and (min-width: $size) {
+    @content;
+  }
+}
+
+@mixin after($content: "", $pos: absolute) {
+  position: relative;
+
+  &::after {
+    content: $content;
+    position: $pos;
+    @content;
+  }
+}
+
+@mixin pseudo(
+  $loc: before,
+  $content: "",
+  $pos: absolute,
+  $top: 0,
+  $bottom: 0,
+  $left: 0,
+  $right: 0
+) {
+  position: relative;
+  &::#{$loc} {
+    content: $content;
+    position: $pos;
+    top: $top;
+    bottom: $bottom;
+    left: $left;
+    right: $right;
+
+    @content;
+  }
+}
+
+@mixin hover-lift() {
+  transition: transform $speed ease-in-out;
+  box-shadow: 0 0.25em 0.5em 0 rgba(black, 0.2);
+
+  //   @include after() {
+  //     box-shadow: 0 0 1.25em 0 rgba(black, 0.4);
+  //     transition: transform $speed ease-in-out;
+  //     opacity: 0;
+  //   }
+
+  @include pseudo($loc: after) {
+    box-shadow: 0 0 1.25em 0 rgba(black, 0.4);
+    transition: transform $speed ease-in-out;
+    opacity: 0;
+  }
+
+  &:hover,
+  &:focus {
+    transform: scale(1.05);
+
+    &::after {
+      opacity: 1;
+    }
+  }
+}

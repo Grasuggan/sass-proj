@@ -1,0 +1,13 @@
+@use "../abstracts/mixins" as m;
+
+$color: red;
+body {
+  font-family: sans-serif;
+  background-color: lighten(red, 10%);
+  color: mix(blue, $color, 10%);
+  font-size: 16px;
+
+  @include m.mq(small) {
+    font-size: 3rem;
+  }
+}

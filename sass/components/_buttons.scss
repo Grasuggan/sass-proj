@@ -1,0 +1,31 @@
+@use "../abstracts/mixins" as m;
+
+a {
+  text-decoration: none;
+}
+.btn {
+  padding: 5em 1.25em;
+  background: red;
+  color: white;
+
+  @extend a;
+}
+
+%btn {
+  padding: 2em;
+  color: white;
+}
+
+.btn-primary {
+  background: red;
+  @extend %btn;
+}
+
+.btn-secondary {
+  background: blue;
+  @extend %btn;
+}
+
+.btn-with-shadow {
+  @include m.hover-lift();
+}
